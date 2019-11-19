@@ -11,3 +11,4 @@ RUN cd mjpg-streamer/mjpg-streamer-experimental && \
     make DESTDIR=/usr install
     
 
+ENTRYPOINT ["/usr/usr/local/bin/mjpg_streamer"]
