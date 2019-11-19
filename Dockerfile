@@ -10,5 +10,5 @@ RUN cd mjpg-streamer/mjpg-streamer-experimental && \
     make USE_LIBV4L2=true clean all && \
     make DESTDIR=/usr install
     
-
+ENV LD_LIBRARY_PATH=/ld_library
 ENTRYPOINT ["/usr/usr/local/bin/mjpg_streamer"]
