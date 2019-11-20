@@ -11,4 +11,4 @@ sudo ./install.sh
 MJPG Streamer
 -------------
 
-The website is available on port `8080`.
+The website is available on port `80`.
