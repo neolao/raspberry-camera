@@ -13,3 +13,9 @@ git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg-streamer
 cd ~/mjpg-streamer/mjpg-streamer-experimental
 make USE_LIBV4L2=true clean all
 make DESTDIR=/ install
+
+ln -s $(pwd)/capture.service /etc/systemd/system/capture.service
+ln -s $(pwd)/mjpg-stream.service /etc/systemd/system/mjpg-stream.service
+
+systemctl enable capture.service
+systemctl enable mjpg-stream.service
