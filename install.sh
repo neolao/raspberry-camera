@@ -19,3 +19,6 @@ ln -s $(pwd)/mjpg-stream.service /etc/systemd/system/mjpg-stream.service
 
 systemctl enable capture.service
 systemctl enable mjpg-stream.service
+
+systemctl start capture.service
+systemctl start mjpg-stream.service
