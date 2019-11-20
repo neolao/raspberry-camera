@@ -11,4 +11,4 @@ apt-get install -y git libv4l-dev libjpeg8-dev imagemagick cmake
 git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg-streamer
 cd ~/mjpg-streamer/mjpg-streamer-experimental
 make USE_LIBV4L2=true clean all
-make DESTDIR=/usr install
+make DESTDIR=/ install
