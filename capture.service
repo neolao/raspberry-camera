@@ -1,0 +1,9 @@
+[Unit]
+Description=Capture camera
+After=network.target
+
+[Service]
+ExecStart=/home/pi/raspberry-camera/capture-camera.sh
+Restart=on-failure
+SuccessExitStatus=3 4
+RestartForceExitStatus=3 4
