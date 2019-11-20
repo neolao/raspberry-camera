@@ -5,4 +5,4 @@ currentDirectory=$(dirname $scriptPath)
 
 export LD_LIBRARY_PATH=/usr/local/lib
 
-mjpg_streamer -i "input_file.so -f $currentDirectory/stream -n camera.jpg" -o "output_http.so -w $currentDirectory/www"
+mjpg_streamer -i "input_file.so -f /run/stream -n camera.jpg" -o "output_http.so -w $currentDirectory/www"

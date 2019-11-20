@@ -5,6 +5,7 @@
 #sh get-docker.sh
 #usermod -aG docker pi
 
+mkdir -p /run/stream
 ln -s /usr/include/linux/videodev2.h /usr/include/linux/videodev.h
 
 apt-get install -y git libv4l-dev libjpeg8-dev imagemagick cmake
